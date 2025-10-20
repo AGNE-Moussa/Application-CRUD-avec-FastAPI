@@ -36,12 +36,6 @@ fastapi-crud/
 └── script.js # Logique frontend (liaison API)
 
 
----
-
-## ⚙️ Installation et exécution
-
----
-
 ## ⚙️ Installation et exécution
 
 ### 1️⃣ Cloner le projet
@@ -77,7 +71,7 @@ Le serveur sera disponible sur :
 Et la documentation automatique ici :
 👉 http://localhost:8000/docs
 
-🌐 Frontend
+## 🌐 Frontend
 
 Le front se trouve dans le dossier frontend/.
 
@@ -109,7 +103,7 @@ Quand tu cliques sur “Modifier”, le formulaire est pré-rempli.
 
 Le bouton change de texte pour “✏️ Mettre à jour l’utilisateur”.
 
-🧱 Middleware CORS (obligatoire)
+## 🧱 Middleware CORS (obligatoire)
 
 Pour permettre la communication entre ton front (index.html) et ton API FastAPI, ajoute ce code dans ton main.py :
 
@@ -142,7 +136,7 @@ Cliquer sur Supprimer pour retirer un utilisateur.
 
 
 
-Améliorations possibles
+## Améliorations possibles
 
 Ajouter une base de données réelle (SQLite, PostgreSQL…)
 
