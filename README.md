@@ -28,12 +28,12 @@ Il permet de gérer une liste d’utilisateurs stockée dans une base de donnée
 ## 🧩 Structure du projet
 
 fastapi-crud/
-├── main.py # Fichier principal FastAPI
-├── models.py # Modèles Pydantic (User, UpdateUser)
-├── requirements.txt # Dépendances Python
-└── frontend/
-├── index.html # Interface utilisateur
-└── script.js # Logique frontend (liaison API)
+main.py # Fichier principal FastAPI
+models.py # Modèles Pydantic (User, UpdateUser)
+requirements.txt # Dépendances Python
+frontend/
+index.html # Interface utilisateur
+script.js # Logique frontend (liaison API)
 
 
 ## ⚙️ Installation et exécution
