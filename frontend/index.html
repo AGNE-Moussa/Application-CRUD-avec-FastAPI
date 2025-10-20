@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion des Utilisateurs - FastAPI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="container mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl">
+    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-600">👥 Gestion des Utilisateurs</h1>
+
+    <!-- Formulaire d'ajout -->
+    <form id="userForm" class="mb-8 space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" id="first_name" placeholder="Prénom" class="border p-2 rounded w-full" required />
+        <input type="text" id="last_name" placeholder="Nom" class="border p-2 rounded w-full" required />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <select id="gender" class="border p-2 rounded w-full" required>
+          <option value="">-- Sélectionnez le sexe --</option>
+          <option value="male">Homme</option>
+          <option value="female">Femme</option>
+        </select>
+
+        <select id="roles" class="border p-2 rounded w-full" required>
+          <option value="user">Utilisateur</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+        ➕ Ajouter un utilisateur
+      </button>
+    </form>
+
+    <!-- Liste des utilisateurs -->
+    <h2 class="text-2xl font-semibold mb-4">Liste des utilisateurs</h2>
+    <div id="userList" class="space-y-3"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
